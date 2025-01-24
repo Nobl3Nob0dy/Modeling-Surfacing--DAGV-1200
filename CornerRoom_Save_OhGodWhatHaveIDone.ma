@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: CornerRoom_Save_OhGodWhatHaveIDone.ma
-//Last modified: Fri, Jan 17, 2025 04:31:33 AM
+//Last modified: Fri, Jan 17, 2025 04:37:05 AM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,22 +11,22 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "2D27321A-4F58-B573-3507-749DAD240DE4";
+fileInfo "UUID" "DCE818D7-4FFA-369B-64FF-24892F347A34";
 createNode transform -s -n "persp";
 	rename -uid "219B5A77-4C60-C390-5628-DEA6901A0944";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -12.601360787817985 18.142482319714198 1.7139870440812299 ;
-	setAttr ".r" -type "double3" -52.799999999958899 -2569.5999999989476 4.9073553769568209e-15 ;
-	setAttr ".rpt" -type "double3" -4.6531933543753643e-16 1.5559709946202167e-16 8.4644993839788413e-17 ;
+	setAttr ".t" -type "double3" -13.151587083286044 12.59075479404485 12.803273462567654 ;
+	setAttr ".r" -type "double3" -34.199999999999982 -46.000000000000007 0 ;
+	setAttr ".rpt" -type "double3" 2.1227139863041395e-17 1.2156531512810973e-15 1.3904886637731656e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "8868CDE6-43F4-92F4-ACFC-5C8BBBA3F038";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 20.574950241417419;
+	setAttr ".coi" 17.062867708090796;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -0.19840582181517474 2.803204357727572 2.8290696982589671 ;
+	setAttr ".tp" -type "double3" -3.0000002384185831 3.0000004768371582 3 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "67A12ACE-4078-6CC4-ED23-36943D212170";
@@ -84,7 +84,6 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "LivingRoom";
 	rename -uid "23B39778-4958-9159-B523-719ED2FAC28E";
-	setAttr ".t" -type "double3" 0 0 -9.4362112119421386 ;
 createNode mesh -n "LivingRoomShape" -p "LivingRoom";
 	rename -uid "23213023-4288-7A5E-30F8-C6A1085F036A";
 	setAttr -k off ".v";
@@ -9515,10 +9514,10 @@ createNode shadingEngine -n "lambert8SG";
 createNode materialInfo -n "materialInfo13";
 	rename -uid "24EFBA88-495E-2AA0-8EBE-079D11BA62F5";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "C1B22392-4ABE-BA34-20FD-B0A3717B8920";
+	rename -uid "CB321019-4CF1-8178-D4ED-E980817D72C1";
 	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "A61FA982-4A4B-0F57-3AAC-DD83D45ECE2E";
+	rename -uid "412707BA-47C2-2E17-9C1D-CDA2DAE9E3B9";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -1263.9718242304434 -1017.259268397909 ;
 	setAttr ".tgi[0].vh" -type "double2" -92.322624011535169 -323.60146756034294 ;
