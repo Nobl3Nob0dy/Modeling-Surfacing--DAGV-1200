@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: CornerRoom_ObjDetail_Final.ma
-//Last modified: Sun, Feb 02, 2025 10:36:47 PM
+//Last modified: Sun, Feb 02, 2025 10:40:07 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,23 +13,22 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "21C3F417-4A6B-6324-8403-41817F2E1976";
+fileInfo "UUID" "111195DE-48FE-43BE-D884-97902227EE6B";
 createNode transform -s -n "persp";
 	rename -uid "413F4D76-49C2-B7B0-B1C8-1EA3D7F606D9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.851250529289247 12.851250529289246 12.706467376986343 ;
-	setAttr ".r" -type "double3" -35.264389682754704 45 -2.2489917831974728e-14 ;
-	setAttr ".rp" -type "double3" -1.8041124150158794e-16 -4.7184478546569153e-16 -3.5527136788005009e-15 ;
-	setAttr ".rpt" -type "double3" -9.3398028315130525e-16 -2.1877079431757605e-15 1.7970786562453477e-15 ;
+	setAttr ".t" -type "double3" 15.241855905639003 8.4423600926945532 13.422103408055039 ;
+	setAttr ".r" -type "double3" -18.600000000000005 49.199999999999974 1.2168864365622595e-15 ;
+	setAttr ".rpt" -type "double3" 4.6922805345627759e-16 -2.7280848348149035e-16 2.7109996594089567e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F06CAE07-4674-C502-1CA6-719103FEAF75";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 17.062866434818773;
+	setAttr ".coi" 17.062866434818758;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 3.0000000000000036 2.9999999999999947 2.8552168476971005 ;
+	setAttr ".tp" -type "double3" 3 3 2.855216847697104 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "652C932C-4013-4F20-8BAD-4291D74D911F";
@@ -16292,10 +16291,10 @@ createNode groupParts -n "groupParts50";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 2 "f[1160:1179]" "f[1200:1219]";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "2FA10A46-4132-C4EB-1B3E-F387DC32A414";
+	rename -uid "358C8C0C-4961-05C7-1C80-0BAF2E9E1332";
 	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "3BE74B8E-4B6A-DFF0-99AF-3B8071867E00";
+	rename -uid "C78FA246-4916-BA23-558B-41A8CDDD1816";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -380.8014297863682 -492.16192718187051 ;
 	setAttr ".tgi[0].vh" -type "double2" 68.380711002595916 -122.48105024936027 ;
