@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: BoatDock_Foundation2.ma
-//Last modified: Sun, Feb 16, 2025 09:42:23 PM
+//Last modified: Sun, Feb 16, 2025 09:48:59 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "polyDisc" "modelingToolkit" "0.0.0.0";
@@ -14,22 +14,22 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "FE2F73CD-4AD7-D299-DD6B-6497FF5E00EC";
+fileInfo "UUID" "70FED466-47BD-B974-B6E1-129BD12F7B47";
 createNode transform -s -n "persp";
 	rename -uid "E9DE03CD-4FDC-322E-DADA-C5B679E0DC4F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.8735651338970829 8.5749427767902553 21.966171751966264 ;
-	setAttr ".r" -type "double3" -23.999999999933035 -3621.9999999999281 8.5758468123562436e-16 ;
-	setAttr ".rpt" -type "double3" -2.6031896334105309e-15 2.9837570418949385e-16 -3.5246719035507625e-15 ;
+	setAttr ".t" -type "double3" -11.756847761029938 11.254763977400277 17.180158180420477 ;
+	setAttr ".r" -type "double3" -23.400000000001903 -35.599999999999497 -1.9558182908154611e-15 ;
+	setAttr ".rpt" -type "double3" -6.2189283076782023e-16 9.7063677604453439e-17 -2.417200776213387e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "8BC744A1-4B08-888D-5030-66ABFC8F93FA";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 21.795543959750656;
+	setAttr ".coi" 22.287122915271386;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 8 0 1.2036532684397725 ;
+	setAttr ".tp" -type "double3" 0.86360704215230299 3.8723313938368538 1.3552808593681647 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -9853,7 +9853,7 @@ createNode polyTweak -n "boat_Obj:polyTweak41";
 	setAttr ".tk[426]" -type "float3" 0.3335264 0 0 ;
 	setAttr ".tk[427]" -type "float3" 0.38333544 0 0 ;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "591F073F-4099-A298-CCCF-3FA51DDEC87F";
+	rename -uid "451B5D88-469E-ABBC-4CB8-46A762D2E6F7";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 69;
