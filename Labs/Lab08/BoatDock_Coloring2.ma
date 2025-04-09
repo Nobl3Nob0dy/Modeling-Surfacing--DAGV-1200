@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: BoatDock_Coloring2.ma
-//Last modified: Wed, Feb 26, 2025 04:27:59 PM
+//Last modified: Wed, Feb 26, 2025 04:30:58 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "polyDisc" "modelingToolkit" "0.0.0.0";
@@ -14,13 +14,13 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 22621)";
-fileInfo "UUID" "CFE67E8B-4A09-2181-1E23-75B3443ACE29";
+fileInfo "UUID" "269E6B7E-4920-1207-EA12-5FA17A195B79";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "E9DE03CD-4FDC-322E-DADA-C5B679E0DC4F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 11.186793018135962 17.003718270227719 14.229241937215356 ;
-	setAttr ".r" -type "double3" -40.20000000000276 -1756.7999999997426 0 ;
+	setAttr ".t" -type "double3" -12.681042032774007 13.165023048157865 17.116471129271648 ;
+	setAttr ".r" -type "double3" -28.199999999973908 -1838.7999999997378 0 ;
 	setAttr ".rpt" -type "double3" -2.317014840620916e-15 -4.9695199948557686e-16 -5.5624515215387758e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "8BC744A1-4B08-888D-5030-66ABFC8F93FA";
@@ -73455,9 +73455,10 @@ createNode aiPhysicalSky -n "aiPhysicalSky1";
 	setAttr ".turbidity" 1;
 	setAttr ".ground_albedo" -type "float3" 0.40476191 0.40476191 0.40476191 ;
 	setAttr ".elevation" 51.428569793701172;
+	setAttr ".azimuth" 126.42857360839844;
 	setAttr ".sky_tint" -type "float3" 0.38780001 0.46790001 0.4709 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "764BDE67-4972-38C4-FCB5-D7B2364F6717";
+	rename -uid "2C724F9F-4900-0959-B73D-C1A6A06D8134";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" 94.106837133548026 -116.20141014840564 ;
 	setAttr ".tgi[0].vh" -type "double2" 330.54195224697963 429.71381499155018 ;
